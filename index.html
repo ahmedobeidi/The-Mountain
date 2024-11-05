@@ -13,23 +13,30 @@
     <link rel="stylesheet" href="./css/output.css" />
   </head>
   <body>
-    <header id="home" class="bg-header p-10 text-primary-white">
-      <nav class="flex flex-row justify-between">
-        <img src="./images/your_logo.png" alt="Logo" class="w-[40%]" />
-        <img src="./images/menus.png" alt="Menu" class="w-[10%]" />
-      </nav>
-      <div class="flex flex-col mt-[100px] text-center justify-center">
-        <h1 class="text-[45px] font-heading">
-          In the hall of the
-          <span class="font-bold text-[50px]">Mountain King</span>
-        </h1>
-        <p class="mt-10 text-[30px] font-paragraph">
-          This is a simple hero unit, a simple jumbotron-style component fot
-          calling extra attention to featured content or information.
-        </p>
-        <div class="flex flex-col text-[20px] font-paragraph items-center mt-5">
-          <a href="#" class="bg-primary-blue w-[50%] p-4">Learn more</a>
-          <a href="#" class="bg-primary-pink w-[40%] p-4">Download</a>
+    <header id="home" class="bg-header p-10 text-primary-white md:h-[100vh] bg-center bg-cover">
+      <div class="flex flex-col items-center">
+        <nav class="flex flex-row justify-between">
+          <div class="flex flex-row items-center">
+            <img src="./images/your_logo.png" alt="Logo" class="w-[40%] md:w-[50%] xl:w-[30%]" />
+            <p class="text-black text-[20px] md:text-[40px]">LOGO</p>
+          </div>
+          <img src="./images/menus.png" alt="Menu" class="w-[10%] md:h-[3%] md:w-[5%] xl:w-[4%]" />
+        </nav>
+        <div class="flex flex-col mt-[100px] text-center md:w-[80%]">
+          <h1 class="text-[45px] font-heading">
+            In the hall of the
+            <span class="font-bold text-[50px] md:text-[70px]">Mountain King</span>
+          </h1>
+        </div>
+        <div class="flex flex-col text-center md:w-[90%]">
+          <p class="mt-10 text-[30px] font-paragraph md:text-[20px]">
+            This is a simple hero unit, a simple jumbotron-style component fot
+            calling extra attention to featured content or information.
+          </p>
+          <div class="flex flex-col text-[20px] font-paragraph items-center mt-5 md:flex-row md:justify-center md:gap-3 md:mt-10">
+            <a href="#" class="bg-primary-blue w-[50%] p-4 md:w-[30%]">Learn more</a>
+            <a href="#" class="bg-primary-pink w-[40%] p-4 md:w-[30%]">Download</a>
+          </div>
         </div>
       </div>
     </header>
@@ -40,7 +47,7 @@
       class="flex flex-col bg-primary-white p-4 mt-[50px] gap-11 text-primary-gray"
     >
       <article class="flex flex-col text-center items-center gap-4">
-        <img src="./images/crayon.png" alt="Pen" class="w-[20%]" />
+        <img src="./images/crayon.png" alt="Pen" class="w-[20%] md:w-[10%]" />
         <h2 class="text-[35px] font-heading">Consectetur Risus</h2>
         <p class="text-[17px] font-paragraph">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis
@@ -50,7 +57,7 @@
         </p>
       </article>
       <article class="flex flex-col text-center items-center gap-4">
-        <img src="./images/camera.png" alt="Pen" class="w-[20%]" />
+        <img src="./images/camera.png" alt="Pen" class="w-[20%] md:w-[10%]" />
         <h2 class="text-[35px] font-heading">Consectetur Risus</h2>
         <p class="text-[17px] font-paragraph">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis
@@ -60,7 +67,7 @@
         </p>
       </article>
       <article class="flex flex-col text-center items-center gap-4">
-        <img src="./images/document.png" alt="Pen" class="w-[20%]" />
+        <img src="./images/document.png" alt="Pen" class="w-[20%] md:w-[10%]" />
         <h2 class="text-[35px] font-heading">Consectetur Risus</h2>
         <p class="text-[17px] font-paragraph">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis
@@ -96,11 +103,11 @@
 
     <!-- Blog Section  -->
     <section class="flex flex-col bg-primary-white p-4 text-primary-gray mt-10">
-        <h2 class="text-[35px] font-heading">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-        <p class="mt-5">
+        <h2 class="text-[35px] font-heading md:text-[40px]">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+        <p class="mt-5 md:text-[20px]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, repellendus hic reprehenderit, dolore cupiditate quasi laboriosam praesentium minima vitae veniam culpa fugit modi quae laudantium odit explicabo aliquam est iste! Itaque fugiat, animi maxime cumque numquam rerum porro magnam tempore.
         </p>
-        <p class="mt-5">
+        <p class="mt-5 md:text-[20px]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, repellendus hic reprehenderit, dolore cupiditate quasi laboriosam praesentium minima vitae veniam culpa fugit modi quae laudantium odit explicabo aliquam est iste! Itaque fugiat, animi maxime cumque numquam rerum porro magnam tempore.
         </p>
         <a href="#" class="bg-primary-pink text-primary-white w-[163px] p-4 text-[20px] mt-5">
@@ -129,24 +136,42 @@
     </section>
 
     <!-- Photos Section -->
-     <section class="flex flex-col bg-gray-300 pt-[50px] gap-3 pb-11">
-        <img src="./images/300.jpeg" alt="#" class="w-[100%]">
-        <img src="./images/776.jpeg" alt="#" class="w-[100%]">
-        <img src="./images/800.jpeg" alt="#" class="w-[100%]">
-        <img src="./images/400.jpeg" alt="#" class="w-[100%]">
-        <img src="./images/2476.jpeg" alt="#" class="w-[100%]">
-        <img src="./images/439.jpeg" alt="#" class="w-[100%]">
-        <img src="./images/140.jpeg" alt="#" class="w-[100%]">
-     </section>
+    <section class="flex flex-col bg-gray-300 pt-[50px] gap-3 pb-11 md:hidden">
+      <img src="./images/300.jpeg" alt="#">
+      <img src="./images/776.jpeg" alt="#">
+      <img src="./images/800.jpeg" alt="#">
+      <img src="./images/400.jpeg" alt="#">
+      <img src="./images/2476.jpeg" alt="#">
+      <img src="./images/439.jpeg" alt="#">
+      <img src="./images/140.jpeg" alt="#">
+    </section>
+
+    <section class="md:flex bg-gray-300 md:pt-[60px] md:pb-[100px] max-md:hidden md:gap-5 md:justify-center">
+      <div class="flex flex-row justify-center gap-5">
+        <div  class="flex flex-col w-[30%] gap-4">
+          <img src="./images/300.jpeg" alt="#">
+          <img src="./images/400.jpeg" alt="#">
+          <img src="./images/2476.jpeg" alt="#">
+          <img src="./images/140.jpeg" alt="#">
+        </div>
+        <div class="flex flex-col w-[30%]">
+          <img src="./images/776.jpeg" alt="#" class="h-full"> 
+        </div>
+        <div class="flex flex-col w-[30%] gap-4">
+          <img src="./images/800.jpeg" alt="#" class="h-[70%]">
+          <img src="./images/439.jpeg" alt="#" class="h-[30%]">
+        </div>
+      </div>
+    </section>
 
      <!-- Partenaires Section -->
-      <section class="p-3">
-        <img src="./images/logo-sample-01.jpg" alt="#" class="w-[100%]">
+      <section class="p-3 md:p-5 md:mt-10">
+        <img src="./images/logo-sample-01.jpg" alt="#" class="w-[100%] md:w-[40%]">
         <img src="./images/logo-sample-02.jpg" alt="#" class="w-[100%]">
         <img src="./images/logo-sample-03.png" alt="#" class="w-[100%]">
-        <img src="./images/logo-sample-04.jpg" alt="#" class="w-[100%]">
+        <img src="./images/logo-sample-04.jpg" alt="#" class="w-[100%] md:w-[40%]">
         <img src="./images/logo-sample-05.jpg" alt="#" class="w-[100%]">
-        <img src="./images/logo-sample-06.png" alt="#" class="w-[100%]">
+        <img src="./images/logo-sample-06.png" alt="#" class="w-[100%] md:w-[40%]">
       </section>
   </body>
 </html>
